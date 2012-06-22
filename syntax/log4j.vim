@@ -2,6 +2,7 @@
 " Language:    Apache log4j/log4php log file
 " Maintainer:  Andrei Nicholson <contact@andreinicholson.com>
 " Last Change: 2012-06-13
+" Version:     0.1
 "
 " While it's possible to define any sort of pattern via PatternLayout (log4j)
 " or LoggerLayoutPattern (log4php), this syntax file focuses on the default
