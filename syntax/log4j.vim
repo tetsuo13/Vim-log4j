@@ -1,8 +1,8 @@
 " Apache log4j and log4php syntax file.
 " Language:    Apache log4j/log4php log file
 " Maintainer:  Andrei Nicholson <contact@andreinicholson.com>
-" Last Change: 2012-06-13
-" Version:     0.1
+" Last Change: 2012-06-22
+" Version:     0.2
 "
 " While it's possible to define any sort of pattern via PatternLayout (log4j)
 " or LoggerLayoutPattern (log4php), this syntax file focuses on the default
@@ -22,7 +22,7 @@ syn case ignore
 syn match log4jHeader    "^[a-z]\{3}.\{-} - " contains=log4jDate,log4jProcessid,log4jLogger,log4jErrorlevel
 syn match log4jDate      contained "^[a-z]\{3} [a-z]\{3}\s\{1,2}[0-9]\{1,2} [0-9]\{2}:[0-9]\{2}:[0-9]\{2} [0-9]\{4}\(,[0-9]\{3}\)\?"
 syn match log4jProcessid contained "\[[0-9]*\]"
-syn match log4jLogger    contained "\w* -"
+syn match log4jLogger    contained "[a-z\-]* -"
 
 syn case match
 
